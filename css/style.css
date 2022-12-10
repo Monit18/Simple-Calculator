@@ -1,0 +1,98 @@
+body{
+    background-color: #FF8A80;
+    font-family: Arial, sans-serif;
+}
+
+.calc{
+    font-family: Arial, sans-serif;
+    width: 290px;
+    height: 450px;
+    background-color: grey;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputEq{
+    /* margin-left: 12px; */
+    font-family: Arial, sans-serif;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,.6);
+    font-size: 15px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 2px;
+    width: 270px;
+    border: none;
+    border-radius: 2px 2px 0 0;
+}
+
+.inputBox{
+    /* margin-left: 12px; */
+    font-family: Arial, sans-serif;
+    color: rgba(255,255,255,0.8);
+    background-color: rgba(0,0,0,.6);
+    font-size: 30px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 2px;
+    width: 270px; 
+    border: none;
+    border-radius: 0 0 2px 2px;
+}
+
+.btn-input, .btn-op{
+    position: relative;
+    color: rgba(0,0,0,0.6);
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px;
+    float: left;
+    width: 60px;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    /* margin-right: 16px;
+    margin-top: 30px; */
+    padding: 15px;
+    cursor: pointer;
+    align-items: center;
+    margin: 6px;
+}
+
+/* .row{
+    margin-left: 12px;
+    margin-right: -10px;
+} */
+
+.inputBox:focus, .inputEq:focus{
+    outline: none;
+}
+
+.btn-clear{
+    background-color: #FF8A80;
+}
+
+.history{
+    font-family: Arial, sans-serif;
+    width: 290px;
+    height: 470px;
+    background-color: black;
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 20px;
+    color: whitesmoke; 
+    /* visibility: hidden; */
+}
+
+.output{
+    text-align: right;
+    padding: 2px;
+}
+
+.output h2{
+    margin-top: -20px;
+}

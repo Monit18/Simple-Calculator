@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - JS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <!-- <div class="title">Simple Calculator</div> -->
+
+            <input type ='text' class="inputEq" readonly><br>
+            <input type ='text' class="inputBox" value="0"><br><br>
+            <!-- <button onclick="clearInput()"  class="btn-input btn-clear">C</button><br> -->
+
+            <!-- <div class="row"> -->
+                <button onclick="clearInput()"  class="btn-input btn-clear">C</button>
+                <button onclick="setVal('%')"  class="btn-input">%</button>
+                <button onclick="clear()"  class="btn-input"><-</button>
+                <button onclick="showHistory()"  class="btn-input btn-clear">H</button>
+
+                <button onclick="setVal('7')"  class="btn-input">7</button>
+                <button onclick="setVal('8')"  class="btn-input">8</button>
+                <button onclick="setVal('9')"  class="btn-input">9</button>
+                <button onclick="setVal('+')"  class="btn-op">+</button>
+    
+                <button onclick="setVal('4')"  class="btn-input">4</button>
+                <button onclick="setVal('5')"  class="btn-input">5</button>
+                <button onclick="setVal('6')"  class="btn-input">6</button>
+                <button onclick="setVal('-')"  class="btn-op">-</button>
+            
+                <button onclick="setVal('1')"  class="btn-input">1</button>
+                <button onclick="setVal('2')"  class="btn-input">2</button>
+                <button onclick="setVal('3')"  class="btn-input">3</button>
+                <button onclick="setVal('*')"  class="btn-op">*</button>
+            
+                <button onclick="setVal('0')"  class="btn-input">0</button>
+                <button onclick="getAns()"  class="btn-input">=</button>
+                <button onclick="setVal('.')"  class="btn-input">.</button>
+                <button onclick="setVal('/')"  class="btn-op">/</button>
+            <!-- </div> -->
+        </div>
+        <div class="history">
+            <!-- <h1 style="color: green; background-color:blueviolet">hello!!</h1> -->
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
