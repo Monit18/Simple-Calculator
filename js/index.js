@@ -1,6 +1,6 @@
 var inputBox = document.querySelector('.inputBox');
 var inputEq = document.querySelector('.inputEq');
-var historyDiv = document.querySelector('.history');
+var historyDiv = document.querySelector('.historyContent');
 var answers = [];
 var equations = [];
 
@@ -31,10 +31,31 @@ function getAns()
 
 function showHistory()
 {
-    historyDiv.innerHTML = "";
+    document.querySelector('.history').style.display = 'block';
+    historyDiv.style.display = 'block';
+    document.querySelector('.close').style.display = 'block';
+    document.querySelector('.delete').style.display = 'block';
+    document.querySelector('.historyContent').innerHTML = "";
     for(let i=0; i < answers.length; i++)
     {
-        historyDiv.innerHTML += '<div class="output">' + '<h4>' + equations[i] + '</h4>' + '' + '<h2>' + answers[i] + '</h2>' + '</div>'
+        document.querySelector('.historyContent').innerHTML += '<div class="output">' + '<h4>' + equations[i] + '</h4>' + '' + '<h2>' + answers[i] + '</h2>' + '</div>';
         // console.log(equations[i]," ", answers[i]);
     }
 }
+
+function deleteHistory()
+{
+    historyDiv.innerHTML = "";
+    answers = [];
+    equations = [];
+}
+
+// function closeHistory()
+// {
+//     // document.querySelector('.history').style.display="none";
+// }
+
+document.querySelector('.close').addEventListener('click',function(){
+    document.querySelector('.history').style.display="none";
+ 
+})

@@ -15,6 +15,11 @@ body{
     justify-content: center;
 }
 
+.container{
+    position: absolute;
+    width: 100%;
+}
+
 .inputEq{
     /* margin-left: 12px; */
     font-family: Arial, sans-serif;
@@ -77,22 +82,54 @@ body{
 }
 
 .history{
+    position: relative;
     font-family: Arial, sans-serif;
     width: 290px;
-    height: 470px;
+    height: 314px;
     background-color: black;
     margin: 30px auto;
     border-radius: 8px;
     padding: 20px;
+    margin-top: -385px;
     color: whitesmoke; 
-    /* visibility: hidden; */
+    display: none;
 }
 
 .output{
+    /* position: relative; */
     text-align: right;
-    padding: 2px;
+    padding: 8px;
+    /* margin-top: 30px; */
+    border: 2px groove grey;
+    /* overflow-y: scroll; */
 }
 
 .output h2{
+    /* position: relative; */
     margin-top: -20px;
+}
+
+.delete{
+    /* position: sticky; */
+    /* text-align: right; */
+    /* position: relative; */
+    margin-left: 270px;
+    cursor: pointer;
+    width: 30px;
+    margin-top: -320px;
+}
+
+.historyContent{
+    /* position: relative; */
+    height: 285px;
+    overflow: auto;
+    margin-left: -3px;
+}
+
+.close{
+    /* position: relative; */
+    cursor: pointer;
+    width: 30px;
+    font-size: 30px;
+    margin-top: -285px;
 }
