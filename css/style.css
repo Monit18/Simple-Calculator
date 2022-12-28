@@ -21,7 +21,6 @@ body{
 }
 
 .inputEq{
-    /* margin-left: 12px; */
     font-family: Arial, sans-serif;
     color: rgba(255,255,255,0.8);
     background-color: rgba(0,0,0,.6);
@@ -35,7 +34,6 @@ body{
 }
 
 .inputBox{
-    /* margin-left: 12px; */
     font-family: Arial, sans-serif;
     color: rgba(255,255,255,0.8);
     background-color: rgba(0,0,0,.6);
@@ -60,18 +58,11 @@ body{
     width: 60px;
     background-color: rgba(255,255,255,0.8);
     border: none;
-    /* margin-right: 16px;
-    margin-top: 30px; */
     padding: 15px;
     cursor: pointer;
     align-items: center;
     margin: 6px;
 }
-
-/* .row{
-    margin-left: 12px;
-    margin-right: -10px;
-} */
 
 .inputBox:focus, .inputEq:focus{
     outline: none;
@@ -96,23 +87,16 @@ body{
 }
 
 .output{
-    /* position: relative; */
     text-align: right;
     padding: 8px;
-    /* margin-top: 30px; */
     border: 2px groove grey;
-    /* overflow-y: scroll; */
 }
 
 .output h2{
-    /* position: relative; */
     margin-top: -20px;
 }
 
 .delete{
-    /* position: sticky; */
-    /* text-align: right; */
-    /* position: relative; */
     margin-left: 270px;
     cursor: pointer;
     width: 30px;
@@ -120,14 +104,14 @@ body{
 }
 
 .historyContent{
-    /* position: relative; */
+    position: relative !important;
     height: 285px;
     overflow: auto;
     margin-left: -3px;
+    top: -300px !important;
 }
 
 .close{
-    /* position: relative; */
     cursor: pointer;
     width: 30px;
     font-size: 30px;

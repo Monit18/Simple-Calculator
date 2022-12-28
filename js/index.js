@@ -23,8 +23,6 @@ function getAns()
     equation = inputBox.value + " = ";
     equations.unshift(equation);
     answers.unshift(eval(inputBox.value));
-    // console.log("Equation : ", equations);
-    // console.log("Answer : ", answers);
     inputEq.value = inputBox.value + " = ";
     inputBox.value=eval(inputBox.value);
 }
@@ -39,21 +37,18 @@ function showHistory()
     for(let i=0; i < answers.length; i++)
     {
         document.querySelector('.historyContent').innerHTML += '<div class="output">' + '<h4>' + equations[i] + '</h4>' + '' + '<h2>' + answers[i] + '</h2>' + '</div>';
-        // console.log(equations[i]," ", answers[i]);
     }
 }
 
 function deleteHistory()
 {
-    historyDiv.innerHTML = "";
-    answers = [];
-    equations = [];
+    var status = confirm("Are you sure you want to delete history ?");
+    if(status){
+        historyDiv.innerHTML = "";
+        answers = [];
+        equations = [];
+    }
 }
-
-// function closeHistory()
-// {
-//     // document.querySelector('.history').style.display="none";
-// }
 
 document.querySelector('.close').addEventListener('click',function(){
     document.querySelector('.history').style.display="none";
